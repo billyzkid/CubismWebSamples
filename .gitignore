@@ -1,6 +1,3 @@
-# Core directory files
-/Core/**/.js
-/Core/**/.ts
 # Package files
 node_modules/
 # Build files

@@ -1,3 +1,7 @@
+[submodule "Core"]
+	path = Core
+	url = https://github.com/billyzkid/CubismWebCore.git
+
 [submodule "Framework"]
 	path = Framework
-	url = https://github.com/Live2D/CubismWebFramework.git
+	url = https://github.com/billyzkid/CubismWebFramework.git
