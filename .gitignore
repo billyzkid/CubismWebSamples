@@ -1,17 +1,9 @@
-# Package files
+# Excluded folders
 node_modules/
-# Build files
-build/
 dist/
-# Other files
-temp/
-.vs/
-.idea/
-*.iml
-.DS_Store
-# Exclude some VSCode setting files.
+
+# Excluded files
 .vscode/*
-!/.vscode/extensions.json
-!/.vscode/launch.json
-!/.vscode/settings.json
-!/.vscode/tasks.json
+
+# Unexcluded files
+!/.vscode/*.json

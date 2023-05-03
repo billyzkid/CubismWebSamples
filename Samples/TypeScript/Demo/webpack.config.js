@@ -1,5 +1,6 @@
 
 var path = require('path');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -13,7 +14,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js'],
     alias: {
-      '@framework': path.resolve(__dirname, '../../../Framework/src')
+      '@framework': path.resolve(__dirname, '../../../../Framework/src')
     }
   },
   module: {
@@ -41,5 +42,12 @@ module.exports = {
       writeToDisk: true,
     },
   },
-  devtool: 'inline-source-map'
+  devtool: 'inline-source-map',
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        '../../../../Core/dist/live2dcubismcore.min.js'
+      ]
+    })
+  ]
 }
